@@ -10,6 +10,8 @@ visualizarInformacoesGlobais() {
     const minutos = Math.round((dados.tempo_medio - horas)
 * 100)
 const porcentagemConectada = ((pessoasConectadas / pessoasNoMundo) * 100).toFixed(2)
+const nomeDasRedes = Object.keys(dados)
+const quantidadeUsuarios = Object.values(dados)
 
     const paragrafo = document.createElement('p')
 paragrafo.classList.add('graficos-container__texto')
